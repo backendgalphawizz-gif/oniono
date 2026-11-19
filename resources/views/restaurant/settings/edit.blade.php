@@ -1,0 +1,6 @@
+@extends('layouts.restaurant')@section('page-title','Settings')@section('content')
+<div class="card card-soft"><div class="card-body"><form method="POST" action="{{ route('restaurant.settings.password') }}">@csrf @method('PUT')
+<div class="mb-3"><label class="form-label">Current Password</label><input type="password" name="current_password" class="form-control" required></div>
+<div class="mb-3"><label class="form-label">New Password</label><input type="password" name="password" class="form-control" required></div>
+<div class="mb-3"><label class="form-label">Confirm Password</label><input type="password" name="password_confirmation" class="form-control" required></div>
+<button class="btn btn-success">Update Password</button></form></div></div>@endsection

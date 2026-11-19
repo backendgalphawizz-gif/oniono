@@ -1,0 +1,1 @@
+@extends('layouts.admin')@section('page-title','Edit Coupon')@section('content')@include('admin.coupons.form',['action'=>route('admin.coupons.update',$coupon),'method'=>'PUT','coupon'=>$coupon])@endsection

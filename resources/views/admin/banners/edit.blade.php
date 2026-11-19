@@ -1,0 +1,1 @@
+@extends('layouts.admin')@section('page-title','Edit Banner')@section('content')@include('admin.banners.form',['action'=>route('admin.banners.update',$banner),'method'=>'PUT','banner'=>$banner])@endsection
