@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="dashboard-intro">
-    <h2>Welcome back, {{ auth('admin')->user()->name }}</h2>
+    <h2>Welcome back aaaa, {{ auth('admin')->user()->name }}</h2>
     <p>Platform snapshot — users, partners, restaurants, orders, and revenue at a glance.</p>
 </div>
 
